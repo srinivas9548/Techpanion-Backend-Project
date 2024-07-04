@@ -1,0 +1,19 @@
+GET http://localhost:5000/
+
+###
+
+POST http://localhost:5000/api/submit-form/
+Content-Type: application/json
+
+{
+  "country": "USA",
+  "bank_key": "1234-5678",
+  "account_number": 987654321,
+  "reference": "Invoice123"
+}
+
+###
+
+GET http://localhost:5000/invoice/
+
+###
