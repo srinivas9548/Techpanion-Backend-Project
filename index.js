@@ -23,8 +23,8 @@ const intializeDBAndServer = async () => {
         app.listen(5000, () => {
             console.log("Server Started at http://localhost:5000/");
         });
-    } catch (e) {
-        console.log(`DB Error: ${e.message}`);
+    } catch (error) {
+        console.log(`DB Error: ${error.message}`);
         process.exit(1);
     }
 };
